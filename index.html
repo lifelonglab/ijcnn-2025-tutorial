@@ -1,10 +1,146 @@
-<html>
-<head>
-<title>Continual Anomaly Detection</title>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Home | IJCNN tutorial</title>
+  <meta name="description" content="IJCNN 2025 tutorial on Continual Learning for Anomaly Detection">
+  <meta name="keywords" content="AI, ML, continual learning, anomaly detection">
+  <meta name="author" content="Roberto Corizzo">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <meta property="og:title" content="Home | IJCNN 2025 tutorial" />
+  <meta property="og:description" content="IJCNN 2025 tutorial on Continual Learning for Anomaly Detection" />
+  <meta property="og:type" content="article" />
+  <meta property="article:author" content="Roberto Corizzo" />
+  <meta property="og:site_name" content="IJCNN 2025 tutorial" />
+  <meta property="og:url" content="https://lifelonglab.github.io/ijcnn-2025-tutorial/" />
+  <meta property="og:locale" content="en_US" />
+  <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"Home | IJCNN 2025 tutorial","author":{"@type":"Person","name":"Roberto Corizzo"},"description":"IJCNN 2025 tutorial on Continual Learning for Anomaly Detection","url":"https://lifelonglab.github.io/ijcnn-2025-tutorial/"}</script>
+
+  <link rel="stylesheet" href="main.css">
+  
+  
+<!-- Analytics -->
+
+
+
 </head>
 
-<body>
-Test 2
-</body>
+
+  <body>
+    
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/ijcnn-2025-tutorial/">IJCNN 2025 tutorial</a>
+
+    <nav class="site-nav">
+      <span class="menu-icon">
+        <svg viewBox="0 0 18 15" width="18px" height="15px">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </span>
+
+      <div class="trigger">
+            <a class="page-link" href="https://sites.google.com/view/icdm2025-open-world-workshop">ICDM 2025 workshop</a>
+            
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <figure>
+  <img src="logo.png" alt="tutorial logo" style="width:80%;" />
+  
+</figure>
+
+<p><b>When and where?</b> Monday, June 30, 2025, 11:30-13:00 - Marinetti Room.</p>
+
+<p><b>Abstract.</b> 
+Anomaly detection is paramount in many real-world domains characterized by evolving behavior, such as monitoring cyber-physical systems, human conditions, and network traffic. 
+</p>
+<p>Current research in anomaly detection leverages offline learning working with static data or online learning, focusing on <cite>constant adaptation</cite> to evolving data. At the same time, continual learning represents an emerging trend, answering the need for machine learning models that <cite>continuously adapt to new challenges in dynamic environments while retaining past knowledge</cite>.
+</p>
+<p>Although this aspect could be beneficial to build effective and robust anomaly detection models,
+continual learning research is mainly dedicated to proposing new model update strategies in
+image classification and reinforcement learning domains. 
+</p>
+<p>
+Moreover, anomaly detection provides unique challenges, such as an <cite>evolving normal class</cite> and <cite>limited availability of anomalies</cite>, which significantly differ from the landscape and scenarios of continual image classification and reinforcement learning.
+</p>
+
+<p><b>Outline.</b>
+In this tutorial, we want to introduce and motivate the problem of <cite>continual anomaly detection</cite> as well as provide foundations about <b>scenarios</b>, <b>strategies</b>, and <b>metrics</b>. Moreover, we want to showcase how to approach the problem of continual anomaly detection with <b>code examples</b> and hands-on practice. </p>
+
+<p><b>Prerequisite knowledge.</b>
+The tutorial requires basic knowledge of machine learning and anomaly detection.  All other required notions will be provided during the tutorial.</p>
+
+<p><h2>✨<b>Check out our Workshop on <a href="https://sites.google.com/view/icdm2025-open-world-workshop">Open-World Anomaly Detection</a> at ICDM 2025! ✨</b></h3></p>
+
+<br />
+
+<h1 id="materials">Materials</h1>
+
+<p>You can find the slides of the tutorial <a href="files/IJCNN-Tutorial-Slides.pdf">here</a>.</p>
+
+<br />
+
+<h1 id="speakers">Speakers</h1>
+
+<div id="speakers">
+    <div class="speaker">
+        <img class="avatar" src="files/roberto.png" /><br />
+        <div class="speaker-name">
+        <b><a href="https://www.rcorizzo.com">Roberto Corizzo</a></b></div>
+        <div class="speaker-uni">
+        <i> American University, USA</i>
+        </div>
+    </div>
+    <div class="speaker">
+        <img class="avatar" src="files/kamil.png" /><br />
+        <div class="speaker-name">
+        <b><a href="https://scholar.google.com/citations?user=5oJ30hkAAAAJ">Kamil Faber</a></b></div>
+        <div class="speaker-uni">
+        <i> AGH University of Krakow</i>
+        </div>
+    </div>
+</div>
+
+<h1 id="recommended-reading">Recommended readings</h1>
+
+<ul>
+  <li><a href="https://ieeexplore.ieee.org/abstract/document/10473036/">Lifelong Continual Learning for Anomaly Detection: New Challenges, Perspectives, and Insights</a></li>
+  <li><a href="https://www.sciencedirect.com/science/article/pii/S2352711024003649">pyCLAD: The universal framework for continual lifelong anomaly detection</a></li>
+</ul>
+
+<blockquote>
+  <p>Last build date: 2025-06-28 - Built based on an Antonio Vergari's template.</p>
+</blockquote>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper" >
+    <div class="footer-nav">
+   </div>
+    </div>
+      <h2 class="footer-heading"><a href="/ijcnn-2025-tutorial/">IJCNN 2025 tutorial</a> - <a href="https://creativecommons.org/licenses/by-sa/4.0/">cc-by-sa</a> <a href="https://github.com/lifelonglab">Roberto Corizzo</a> - 2025.</h2> 
+  </div>
+</footer>
+
+
+  </body>
 
 </html>
